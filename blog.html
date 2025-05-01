@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crack & Stack</title>
+    <link rel="icon" href="assets/CnsPNG.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="blog.css" />
+
+    <style>
+      .blog-section {
+        padding: 2rem;
+        font-family: "Poppins", sans-serif;
+        background: #f9f9f9;
+      }
+
+      .tab-buttons {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+      }
+
+      .tab-btn {
+        padding: 0.75rem 1.25rem;
+        background: #eee;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .tab-btn.active {
+        background-color: #333;
+        color: #fff;
+      }
+
+      .tab-content {
+        display: none; /* Hidden by default */
+        background: #fff;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        color: #333;
+        box-sizing: border-box; /* Ensure padding doesn't cause overflow */
+        min-height: 200px; /* Set a minimum height to avoid content collapse */
+        overflow: auto; /* Prevent content from overflowing */
+        width: 100%; /* Ensure full-width on smaller screens */
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="App" id="home">
+      <header class="App-header">
+        <nav class="App-navbar">
+          <img
+            src="assets/CnsPNG2.png"
+            alt="Crack & Stack Logo"
+            class="logo-img"
+          />
+
+          <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+
+          <ul id="nav-menu">
+            <li><a href="/#home">Home</a></li>
+            <li><a href="/#about">About</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/#team">Team</a></li>
+            <li><a href="/#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- BLOG UI SECTION -->
+      <main class="blog-section">
+        <div class="tab-buttons">
+          <button class="tab-btn active" data-tab="group">Group</button>
+          <button class="tab-btn" data-tab="individual">Individual</button>
+          <button class="tab-btn" data-tab="industry">Industry Visit</button>
+          <button class="tab-btn" data-tab="regional">Regional/National</button>
+        </div>
+
+        <div class="tab-content active" id="group">
+          <div class="card">
+            <h2 class="tab-title">Group Activity 1 Webinar</h2>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  <strong>I. Event Overview</strong><br />
+                  The webinar titled
+                  <em>"Software Engineering and System Architecture"</em> was
+                  held on <strong>September 30, 2024</strong>, from
+                  <strong>2:00 PM to 3:30 PM</strong> via
+                  <strong>Google Meet</strong> and
+                  <strong>Facebook Live</strong>. Delivered by
+                  <strong>Mr. Jay Renz Morgado</strong>, the session welcomed
+                  students from various year levels, focusing on those in the
+                  College of Computer Studies. The discussion introduced
+                  fundamental concepts of software engineering and system
+                  architecture, highlighting best practices and industry
+                  relevance.
+                </p>
+
+                <p>
+                  <strong>II. Learnings and Reflections</strong><br />
+                  The speaker broke down complex topics such as the
+                  <em>software development lifecycle, design patterns</em>, and
+                  the importance of <em>scalability</em> and
+                  <em>maintainability</em>. His real-world examples made the
+                  technical ideas relatable. The webinar also covered modern
+                  methodologies like <strong>Agile</strong> and
+                  <strong>DevOps</strong>, fostering a better understanding of
+                  collaboration in development environments.
+                </p>
+
+                <p>
+                  <strong>III. Practical Applications</strong><br />
+                  Concepts like <em>modular design</em>,
+                  <em>architecture diagrams</em>, and
+                  <em>structured documentation</em> can be directly applied to
+                  academic or personal software projects. As an organizer, these
+                  insights are also useful for planning future events, using a
+                  more systematic approach like software project management to
+                  ensure clarity and success.
+                </p>
+
+                <p>
+                  <strong>IV. Positive Feedback on Organization</strong><br />
+                  The event had a strong turnout of
+                  <strong>120 participants</strong> and was praised for its
+                  smooth execution, informative content, and effective
+                  promotion. Attendees appreciated the clarity of the speaker
+                  and the Q&A session, which allowed for deeper interaction and
+                  learning.
+                </p>
+
+                <p>
+                  <strong>V. Suggestions for Improvement</strong><br />
+                  To further improve future webinars, we suggest incorporating
+                  <em>interactive elements</em> such as polls or discussions,
+                  extending the <em>Q&A session</em>, and having
+                  <em>technical backup plans</em> to avoid disruptions in
+                  virtual setups.
+                </p>
+              </div>
+              <img
+                src="assets/WEBINAR1.jpg"
+                alt="Webinar Poster 1"
+                class="card-image"
+              />
+            </div>
+            <div>
+              <p><strong>VI. Photos/Videos taken</strong></p>
+              <div class="photo-gallery">
+                <img src="assets/DocWeb1.jpg" alt="Webinar Photo 1" />
+                <img src="assets/DocWeb2.jpg" alt="Webinar Photo 2" />
+                <img src="assets/DocWeb3.jpg" alt="Webinar Photo 3" />
+                <img src="assets/DocWeb4.jpg" alt="Webinar Photo 4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="tab-title">Group Activity 2 Seminar</h2>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  <strong>I. Event Overview</strong><br />
+                  The seminar titled
+                  <em
+                    >"Unlocking the Power of Branding: Design, Identity, and
+                    Impact"</em
+                  >
+                  will be held on <strong>October 26, 2024</strong>, from
+                  <strong>3:00 PM to 4:30 PM</strong> in Room 405 at
+                  <strong>Gordon College Campus</strong>, Olongapo City. Led by
+                  <strong>Mr. Rosmach Bautista</strong>, the event is open to
+                  students from the College of Computer Studies at Gordon
+                  College, encompassing all year levels and courses, as well as
+                  external students from other schools. The seminar aims to
+                  provide valuable knowledge on brand design, encouraging
+                  creativity and highlighting its impact on the industry.
+                  Additionally, it will give students a deeper understanding of
+                  what to expect in the field of Multimedia. This is an
+                  excellent opportunity for aspiring professionals to explore
+                  the potential of branding in shaping their future careers.
+                </p>
+
+                <p>
+                  <strong>II. Learnings and Reflections</strong><br />
+                  The seminar highlighted the importance of branding in creating
+                  a strong identity and fostering a connection with audiences.
+                  Key takeaways included understanding the principles of
+                  effective design, the psychological impact of colors and
+                  shapes, and the significance of consistency in brand identity.
+                  Mr. Bautista emphasized the need for creativity and innovation
+                  to stand out in a competitive industry, particularly in the IT
+                  and multimedia sectors. I also learned how branding is not
+                  just about aesthetics but about storytelling and creating a
+                  lasting impression.
+                </p>
+
+                <p>
+                  <strong>III. Practical Applications</strong><br />
+                  The insights gained from the seminar can be applied in
+                  practical scenarios such as creating personal branding for job
+                  applications or freelance projects. By integrating design
+                  principles shared during the talk, I feel more equipped to
+                  develop logos, visual materials, and branding strategies that
+                  align with target audience expectations. Additionally, I plan
+                  to apply these concepts to academic projects, such as
+                  designing presentations or collaborative multimedia outputs,
+                  to ensure they are professional and impactful.
+                </p>
+
+                <p>
+                  <strong>IV. Positive Feedback on Organization</strong><br />
+                  The event was well-organized, with clear communication and a
+                  conducive environment for learning. Mr. Bautista’s expertise
+                  and engaging delivery made the session informative and
+                  inspiring. The seminar successfully balanced theoretical
+                  knowledge with practical insights, keeping the audience
+                  involved through relatable examples and interactive
+                  discussions.
+                </p>
+
+                <p>
+                  <strong>V. Suggestions for Improvement</strong><br />
+                  While the seminar was effective, incorporating hands-on
+                  activities or live demonstrations of branding design would
+                  enhance engagement and solidify understanding. Extending the
+                  duration of the seminar to allow for a Q&A session would also
+                  provide students an opportunity to address specific queries.
+                  Lastly, providing digital resources or templates post-event
+                  would help attendees implement what they learned more
+                  effectively.
+                </p>
+              </div>
+              <img
+                src="assets/SEMINAR1.jpg"
+                alt="Seminar Poster 1"
+                class="card-image"
+              />
+            </div>
+            <div>
+              <p><strong>VI. Photos/Videos taken</strong></p>
+              <div class="photo-gallery">
+                <img src="assets/DocSem1.jpg" alt="Webinar Photo 1" />
+                <img src="assets/DocSem2.jpg" alt="Webinar Photo 2" />
+                <img src="assets/DocSem3.jpg" alt="Webinar Photo 3" />
+                <img src="assets/DocSem4.jpg" alt="Webinar Photo 4" />
+              </div>
+            </div>
+          </div>
+        
+          <div class="card">
+            <h2 class="tab-title">Group Activity 3 Seminar</h2>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  <strong>I. Event Overview</strong><br />
+                  The seminar titled
+                  <em
+                    >"The Importance of Version Control in System Development and
+                    Thesis Project"</em
+                  >
+                  will be held on <strong>November 7, 2024</strong>, from
+                  <strong>2:30 PM to 3:30 PM</strong> in Room 520 at
+                  <strong>Gordon College Campus</strong>, Olongapo City. Led by
+                  <strong>Mr. Ralph Angelo Jaminal</strong>, the event is designed
+                  for students from various year levels and courses in the College
+                  of Computer Studies. The seminar aims to equip participants with
+                  essential skills and knowledge to use version control systems
+                  effectively, with a particular focus on GitHub. By attending,
+                  students will learn how to enhance project management, foster
+                  collaboration, and boost productivity in their thesis or
+                  development work. This session is a valuable opportunity to
+                  master tools critical for success in system development and
+                  academic projects.
+                </p>
+
+                <p>
+                  <strong>II. Learnings and Reflections</strong><br />
+                  The seminar highlighted the significance of version control
+                  systems, emphasizing how tools like GitHub can streamline
+                  collaboration and manage complex projects effectively. I learned
+                  that version control is not just a technical requirement but a
+                  foundational skill in system development and thesis projects.
+                  Concepts such as branching, committing changes, resolving merge
+                  conflicts, and maintaining a clear repository history were
+                  explained with practical examples. Mr. Jaminal’s insights helped
+                  demystify GitHub's intimidating interface, making it accessible
+                  even for beginners. Additionally, I gained a better
+                  understanding of how version control ensures accountability and
+                  traceability in projects, allowing developers to backtrack and
+                  identify specific changes. The importance of maintaining
+                  organized repositories for future scalability and team
+                  collaboration was also emphasized, which I found particularly
+                  relevant for thesis work that often involves group dynamics.
+                </p>
+
+                <p>
+                  <strong>III. Practical Applications</strong><br />
+                  I plan to incorporate version control into my thesis project
+                  immediately. Using GitHub will enable my team to collaborate
+                  more efficiently, avoid redundant work, and minimize conflicts
+                  during code integration. By setting up a shared repository and
+                  assigning clear responsibilities, we can ensure a structured
+                  workflow. On a broader level, the knowledge gained from the
+                  seminar can also be applied to internships or freelance
+                  projects, where version control is often a standard practice.
+                  Maintaining a personal GitHub portfolio can serve as a valuable
+                  asset in showcasing my skills and completed projects to
+                  potential employers.
+                </p>
+
+                <p>
+                  <strong>IV. Positive Feedback on Organization</strong><br />
+                  The seminar was well-organized, with a clear agenda and a
+                  speaker who was both knowledgeable and engaging. The use of live
+                  demonstrations made the session interactive and easy to follow.
+                  The inclusion of practical examples and real-world applications
+                  of GitHub was particularly commendable, as it bridged the gap
+                  between theory and practice. The allotted time was used
+                  effectively, leaving room for a brief Q&A session, which
+                  clarified many doubts.
+                </p>
+
+                <p>
+                  <strong>V. Suggestions for Improvement</strong><br />
+                  The seminar was informative, but future sessions could benefit
+                  from hands-on activities for managing GitHub repositories and
+                  more time to cover advanced topics like CI/CD pipelines.
+                  Overall, it was a valuable initiative that equipped students
+                  with important skills, helping them become more proficient with
+                  industry-standard tools.
+                </p>
+              </div>
+              <img
+                src="assets/SEMINAR2.jpg"
+                alt="Seminar Poster 2"
+                class="card-image"
+              />
+            </div>
+
+            <div>
+              <div>
+                <p><strong>VI. Photos/Videos taken</strong></p>
+                <div class="photo-gallery">
+                  <img src="assets/DocSem5.jpg" alt="Webinar Photo 1" />
+                  <img src="assets/DocSem6.jpg" alt="Webinar Photo 2" />
+                  <img src="assets/DocSem7.jpg" alt="Webinar Photo 3" />
+                  <img src="assets/DocSem8.jpg" alt="Webinar Photo 4" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="tab-title">Group Activity 4 Webinar</h2>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  <strong>I. Event Overview</strong><br />
+                  The webinar titled
+                  <em
+                    >"Introduction to Virtual Assistant (VA) Roles in the Digital
+                    Age"</em
+                  >
+                  will take place on <strong>November 23, 2024</strong>, from
+                  <strong>2:00 PM to 3:30 PM</strong>, conducted virtually via
+                  <strong>Google Meet</strong> and <strong>Facebook Live</strong>.
+                  Presented by <strong>Mrs. Ruslene C. Salvatus</strong>, this
+                  session is open to students from various schools and year
+                  levels, particularly those pursuing courses related to the
+                  College of Computer Studies. The seminar will provide an
+                  overview of virtual assistant roles, highlighting their growing
+                  importance in different sectors. It will showcase how businesses
+                  and individuals can leverage VAs to optimize operations, discuss
+                  the essential skills and tools for successful VA work, and
+                  explore how VA roles may evolve with advancing technology. This
+                  is an excellent opportunity for students to gain insights into a
+                  rapidly expanding career field.
+                </p>
+
+                <p>
+                  <strong>II. Learnings and Reflections</strong><br />
+                  As an organizer, one of the most striking takeaways from the
+                  webinar was the emphasis on versatility and skill development
+                  for VAs. Mrs. Salvatus highlighted the demand for time
+                  management, communication, and proficiency in productivity tools
+                  like project management software and cloud-based platforms. I
+                  also learned about the vast opportunities available to VAs,
+                  ranging from administrative support to social media management,
+                  which can cater to diverse industries and individual needs. The
+                  session underscored the role of technology in reshaping work
+                  dynamics, demonstrating how VAs can provide innovative solutions
+                  to businesses of all sizes. This broadened my understanding of
+                  how virtual roles are not only viable but thriving in today's
+                  economy.
+                </p>
+
+                <p>
+                  <strong>III. Practical Applications</strong><br />
+                  The insights from this webinar can be practically applied in
+                  multiple ways. For instance, students can start honing their
+                  digital skills through accessible tools like
+                  <strong>Google Workspace</strong>, <strong>Canva</strong>, and
+                  <strong>Trello</strong> to build their VA competencies. As a
+                  student, I now see the importance of cultivating a strong online
+                  presence and portfolio to showcase my skills to potential
+                  employers or clients. Additionally, the strategies for effective
+                  time management and multitasking discussed in the webinar are
+                  directly applicable to academic life and future work
+                  environments. On a broader scale, the event inspired me to
+                  consider virtual assistant services as a part-time opportunity
+                  while studying, as it offers both flexibility and valuable
+                  experience in the professional world.
+                </p>
+
+                <p>
+                  <strong>IV. Positive Feedback on Organization</strong><br />
+                  The webinar was well-organized, with seamless coordination
+                  across platforms. The choice of speaker, Mrs. Salvatus, was
+                  commendable, as her expertise and engaging presentation kept the
+                  audience captivated. The use of <strong>Google Meet</strong> for
+                  real-time interaction and <strong>Facebook Live</strong> for
+                  extended reach ensured accessibility for participants. The
+                  event’s structure, beginning with an introduction to VA roles
+                  and moving into specific skills and tools, was logical and
+                  informative. The Q&A session allowed attendees to clarify doubts
+                  and interact with the speaker, making the session dynamic and
+                  participatory.
+                </p>
+
+                <p>
+                  <strong>V. Suggestions for Improvement</strong><br />
+                  While the event was successful, there are a few enhancements
+                  that could further improve future webinars. Introducing
+                  pre-event engagement activities, such as sharing preparatory
+                  materials, teaser content, short videos, or quizzes, could build
+                  anticipation and better prepare attendees for the session.
+                  Adding interactive elements, like live polls or hands-on
+                  exercises, during the webinar would boost engagement and ensure
+                  participants remain actively involved. Additionally, offering
+                  follow-up activities, such as access to session recordings or
+                  supplementary resources, would reinforce the learning experience
+                  and encourage practical application of the insights gained.
+                </p>
+              </div>
+              <img
+                src="assets/WEBINAR2.jpg"
+                alt="Webinar Poster 2"
+                class="card-image"
+              />
+            </div>
+
+            <div>
+              <p><strong>VI. Photos/Videos taken</strong></p>
+              <div class="photo-gallery">
+                <img src="assets/DocWeb5.jpg" alt="Webinar Photo 1" />
+                <img src="assets/DocWeb6.jpg" alt="Webinar Photo 2" />
+                <img src="assets/DocWeb7.jpg" alt="Webinar Photo 3" />
+                <img src="assets/DocWeb8.jpg" alt="Webinar Photo 4" />
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="tab-title">Group Activity 5 Seminar</h2>
+            <div class="card-body">
+              <div class="card-content">
+                <p>
+                  <strong>I. Event Overview</strong><br />
+                  The seminar titled <em>“GCCC Tech Fest 2025”</em> was held on
+                  <strong>February 22, 2025</strong>, at
+                  <strong>Marikit Park, Olongapo City</strong>. It served as a
+                  platform for students and tech enthusiasts to explore topics in
+                  cybersecurity and artificial intelligence. The event featured
+                  insightful talks from experts such as
+                  <strong>Mr. Domingo J. Chiro Jr.</strong> (Cybersecurity 101),
+                  <strong>Mr. Wilson W. Censon</strong> (How AI is Shaping Our
+                  Future: Opportunities for Students), and
+                  <strong>Mr. Marvin Calingacion</strong> (Pillars of Information
+                  Security). Participants, including students from various
+                  institutions and IT professionals, engaged in discussions,
+                  competitions, and e-sports tournaments. The Tech Fest aimed to
+                  inspire, educate, and connect individuals by showcasing
+                  innovations, encouraging collaboration, and creating networking
+                  opportunities with industry professionals.
+                </p>
+
+                <p>
+                  <strong>II. Learnings and Reflections</strong><br />
+                  The seminar provided a comprehensive understanding of modern
+                  cybersecurity and AI developments.
+                  <strong>Mr. Chiro’s</strong> Cybersecurity 101 emphasized
+                  protecting data with strong passwords, encryption, and secure
+                  access. <strong>Mr. Censon’s</strong> AI session revealed the
+                  transformative role of AI in sectors like education, business,
+                  and healthcare, inspiring me to explore AI-driven solutions.
+                  <strong>Mr. Calingacion</strong> discussed the core principles
+                  of information security—confidentiality, integrity, and
+                  availability—highlighting their importance in both personal and
+                  organizational settings. Beyond the talks, the competitions and
+                  gaming events like <em>Mobile Legends</em> and
+                  <em>Tekken</em> tournaments demonstrated the strong connection
+                  between entertainment, technology, and community building.
+                </p>
+
+                <p>
+                  <strong>III. Practical Applications</strong><br />
+                  The insights gained from the seminar are applicable in several
+                  ways. I plan to adopt essential cybersecurity practices such as
+                  regularly updating software, using firewalls, and implementing
+                  secure authentication. In future development projects, I aim to
+                  incorporate the principles of information security to safeguard
+                  sensitive data. Additionally,
+                  <strong>Mr. Censon’s</strong> discussion encouraged me to
+                  integrate AI tools into academic and professional tasks—such as
+                  automating repetitive processes or building smarter
+                  applications—enhancing both efficiency and innovation in my
+                  work.
+                </p>
+
+                <p>
+                  <strong>IV. Positive Feedback on Organization</strong><br />
+                  The GCCC Tech Fest 2025 was well-organized and engaging. The
+                  balance between educational content and interactive activities
+                  created an energetic and inclusive atmosphere. The featured
+                  speakers delivered their sessions with clarity and relevance,
+                  and the event ran smoothly across all segments. The cosplay
+                  contest, tech exhibits, and e-sports tournaments added a fun and
+                  competitive edge, attracting a wider audience and promoting
+                  camaraderie among participants. The organizers ensured that each
+                  component of the event was executed efficiently, making it a
+                  memorable experience for all attendees.
+                </p>
+
+                <p>
+                  <strong>V. Suggestions for Improvement</strong><br />
+                  To further enhance future Tech Fest events, incorporating
+                  hands-on workshops—such as cybersecurity simulations or AI
+                  mini-projects—would offer more immersive learning experiences.
+                  Attendees would benefit from practical exposure to securing
+                  systems or building AI models. Additionally, creating more
+                  structured networking opportunities, like breakout sessions or
+                  industry-led roundtable discussions, would help participants
+                  connect, collaborate, and deepen their understanding of the
+                  topics covered.
+                </p>
+              </div>
+              <img
+                src="assets/SEMINAR3.jpg"
+                alt="GCCC Tech Fest 2025 Poster"
+                class="card-image"
+              />
+            </div>
+
+            <div>
+              <p><strong>VI. Photos/Videos taken</strong></p>
+              <div class="photo-gallery">
+                <img src="assets/DocSem12.JPG" alt="Webinar Photo 1" />
+                <img src="assets/DocSem13.JPG" alt="Webinar Photo 2" />
+                <img src="assets/DocSem11.JPG" alt="Webinar Photo 3" />
+                <img src="assets/DocSem10.JPG" alt="Webinar Photo 4" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content active" id="individual">
+          <div class="row-align">
+            <h2 class="tab-title">Individual</h2>
+            <select id="individualSelect">
+              <option value="" disabled selected>Select member</option>
+              <option value="ehdsell">Ehdsell John B. Apan</option>
+              <option value="jedediah">Jedediah Cruz</option>
+              <option value="ivan">Ivan Jason De Luna</option>
+              <option value="ralph">Ralph Angelo Jaminal</option>
+              <option value="ehdrian">Ehdrian Lim</option>
+              <option value="jordan">Jordan Magbanua</option>
+              <option value="don">Don Ace Rañada</option>
+            </select>
+          </div>
+          <div class="individual-content" id="ehdsell">
+            Content for Ehdsell John B. Apan
+          </div>
+          <div class="individual-content" id="jedediah">
+            Content for Jedediah Cruz
+          </div>
+          <div class="individual-content" id="ivan">
+            Content for Ivan Jason De Luna
+          </div>
+          <div class="individual-content" id="ralph">
+            Content for Ralph Angelo Jaminal
+          </div>
+          <div class="individual-content" id="ehdrian">
+            Content for Ehdrian Lim
+          </div>
+          <div class="individual-content" id="jordan">
+            Content for Jordan Magbanua
+          </div>
+          <div class="individual-content" id="don">
+            Content for Don Ace Rañada
+          </div>
+        </div>
+
+        <div class="tab-content" id="industry">
+          <h2 class="tab-title">Industry Visit Page</h2>
+          <p>
+            Details about industry visits, photos, reflections, and learnings.
+          </p>
+        </div>
+
+        <div class="tab-content" id="regional">
+          <h2 class="tab-title">Regional/National Page</h2>
+          <p>Coverage and documentation of regional or national events.</p>
+        </div>
+
+          
+
+          
+
+         
+      </main>
+    </div>
+
+    <script>
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabContents = document.querySelectorAll(".tab-content");
+
+      tabButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          tabButtons.forEach((btn) => btn.classList.remove("active"));
+          tabContents.forEach((content) => content.classList.remove("active"));
+
+          button.classList.add("active");
+          document.getElementById(button.dataset.tab).classList.add("active");
+        });
+      });
+
+      const selectElement = document.getElementById("individualSelect");
+      const contents = document.querySelectorAll(".individual-content");
+
+      selectElement.addEventListener("change", (e) => {
+        const selectedValue = e.target.value;
+
+        contents.forEach((content) => {
+          content.classList.remove("active");
+        });
+
+        if (selectedValue) {
+          const targetContent = document.getElementById(selectedValue);
+          if (targetContent) {
+            targetContent.classList.add("active");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
