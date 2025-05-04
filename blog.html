@@ -51,17 +51,18 @@
       }
 
       .tab-content {
-        display: none; /* Hidden by default */
-        background: #fff;
-        padding: 1.5rem;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        color: #333;
-        box-sizing: border-box; /* Ensure padding doesn't cause overflow */
-        min-height: 200px; /* Set a minimum height to avoid content collapse */
-        overflow: auto; /* Prevent content from overflowing */
-        width: 100%; /* Ensure full-width on smaller screens */
-      }
+  display: none; /* Hidden by default */
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  box-sizing: border-box;
+  min-height: 60vh; /* Adjust based on your layout needs */
+  overflow: auto;
+  width: 100%;
+}
+
 
       .tab-content.active {
         display: block;
@@ -98,10 +99,10 @@
       <!-- BLOG UI SECTION -->
       <main class="blog-section">
         <div class="tab-buttons">
-          <button class="tab-btn active" data-tab="group">Group</button>
-          <button class="tab-btn" data-tab="individual">Individual</button>
+          <button class="tab-btn active" data-tab="group">Group Activity</button>
+          <button class="tab-btn" data-tab="individual">Individual Activity</button>
           <button class="tab-btn" data-tab="industry">Industry Visit</button>
-          <button class="tab-btn" data-tab="regional">Regional/National</button>
+          <button class="tab-btn" data-tab="regional">Regional/National Conference</button>
         </div>
 
         <div class="tab-content active" id="group">
@@ -601,7 +602,7 @@
 
         <div class="tab-content" id="individual">
           <div class="row-align">
-            <h2 class="tab-title">Individual Reflection</h2>
+            <h2 class="tab-title">Individual Reflection, Select to see their blog.</h2>
             <select id="individualSelect">
               <option value="" disabled selected>Select a member</option>
               <option value="ehdsell">Apan, Ehdsell John B.</option>
@@ -3519,8 +3520,6 @@
                 </div>
               </div>
             </div>
-
-
 
             <div class="card">
               <h2 class="tab-title">Webinar 1 Title: “Leveraging AI in Research Work and Writing”</h2>
